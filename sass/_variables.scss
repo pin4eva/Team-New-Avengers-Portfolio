@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$sm: 569px;
+$md: 768px;
+$primary: #fff175;
+$secondary: #fdf9d2;
+$dark: #16151c;
+$gray: #c5c5c6;
+$info: #c5c5c6;
+$text-2: #212529; // $success:       $green !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+html,
+body {
+  font-family: "Popins", sans-serif !important;
+  color: $dark;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 14px !important;
+  @media screen and (min-width: $md) {
+    font-size: 16px !important;
+  }
+}
+
+h1 {
+  font-size: 5rem !important;
+  font-weight: bolder !important;
+}
+h2 {
+  font-size: 3.4rem !important;
+  font-weight: bolder !important;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+  font-weight: bolder !important;
+}
+
+.btn {
+  padding: 0.8rem 1.3rem !important;
+}
+
+.btn-outline-dark {
+  &:hover {
+    background-color: $primary;
+    border: $primary;
+  }
+}
+
+.btn-primary {
+  font-weight: bolder !important;
+  &:hover {
+    background-color: transparent !important;
+    border-color: $primary !important;
+    color: $primary !important;
+  }
+}
+
+.text-large {
+  font-size: 8.4375rem !important;
+  font-weight: 900 !important;
+  @media screen and (max-width: $md) {
+    font-size: 6rem !important;
+  }
+  @media screen and (max-width: $sm) {
+    font-size: 4rem !important;
+  }
+}
+.text-18 {
+  font-size: 18px !important;
+}
+
+hr {
+  border: 3px solid $primary !important;
+}
+
+#about {
+  img {
+    width: 523px;
+    height: 479x;
+    max-width: 95%;
+  }
+}
