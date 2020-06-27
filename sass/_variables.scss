@@ -11,11 +11,19 @@ $text-2: #212529; // $success:       $green !default;
 // $warning:       $yellow !default;
 // $danger:        $red !default;
 // $light:         $gray-100 !default;
-html,
+html {
+  width: 100% !important;
+  height: 100%;
+}
 body {
   font-family: "Popins", sans-serif !important;
   color: $dark;
-  width: 100%;
+  width: inherit !important;
+  height: inherit !important;
+  max-width: 100% !important;
+  min-height: 100%;
+  margin: 0;
+
   overflow-x: hidden;
   font-size: 14px !important;
   @media screen and (min-width: $md) {
