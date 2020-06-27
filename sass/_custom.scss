@@ -56,22 +56,21 @@ header {
     font-weight: normal !important;
   }
   .image_line {
-    width: 365px;
-    height: 454px;
-    max-width: 95%;
+    width: 18rem;
+    height: 24rem;
+    max-width: 90%;
+    max-width: 90%;
     // max-height: 95%;
     border: 3px solid $primary;
     position: relative;
   }
   .image {
-    position: absolute;
-    top: -5%;
-    left: -5%;
     img {
-      width: 365px;
-      height: 454px;
-      max-width: 95%;
-      max-height: 90%;
+      position: absolute;
+      top: -5%;
+      left: 25%;
+      width: 18rem;
+      height: 24rem;
     }
   }
 
@@ -80,7 +79,7 @@ header {
       color: rgba(255, 255, 255, 0.02) !important;
     }
   }
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: $md) {
     text-align: center;
     .text-content {
       margin: 2rem 0 !important;
@@ -91,15 +90,25 @@ header {
 #right_hero {
   @media screen and (max-width: $sm) {
     display: none !important;
+    text-align: center;
+    .text-content {
+      margin: 2rem 0 !important;
+    }
   }
 }
 
 #story {
-  .imgage {
-    background: blue;
+  .image {
     width: 100%;
-    max-width: 70%;
-    margin: auto;
+
+    img {
+      width: 20rem;
+      height: 20rem;
+      @media screen and (max-width: $md) {
+        width: 18rem !important;
+        height: 18rem !important;
+      }
+    }
   }
   /* Timeline */
   .timeline {
@@ -171,8 +180,8 @@ header {
   img {
     width: 20rem;
     height: 360px;
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 20rem;
+    max-height: 20rem;
     margin: auto;
   }
   h3 {
