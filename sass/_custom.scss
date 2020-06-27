@@ -56,8 +56,8 @@ header {
     font-weight: normal !important;
   }
   .image_line {
-    width: 365px;
-    height: 454px;
+    width: 18rem;
+    height: 24rem;
     max-width: 95%;
     // max-height: 95%;
     border: 3px solid $primary;
@@ -68,9 +68,9 @@ header {
     top: -5%;
     left: -5%;
     img {
-      width: 365px;
-      height: 454px;
-      max-width: 95%;
+      width: 18rem;
+      height: 24rem;
+      max-width: 90%;
       max-height: 90%;
     }
   }
@@ -95,8 +95,7 @@ header {
 }
 
 #story {
-  .imgage {
-    background: blue;
+  .image {
     width: 100%;
     max-width: 70%;
     margin: auto;
@@ -171,8 +170,8 @@ header {
   img {
     width: 20rem;
     height: 360px;
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 20rem;
+    max-height: 20rem;
     margin: auto;
   }
   h3 {
