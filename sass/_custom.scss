@@ -72,11 +72,6 @@ header {
       width: 18rem;
       height: 24rem;
     }
-    @media screen and (max-width: $md) {
-      img {
-        left: -5%;
-      }
-    }
   }
 
   .welcome {
@@ -84,7 +79,7 @@ header {
       color: rgba(255, 255, 255, 0.02) !important;
     }
   }
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: $md) {
     text-align: center;
     .text-content {
       margin: 2rem 0 !important;
