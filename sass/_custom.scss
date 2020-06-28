@@ -28,6 +28,15 @@ header {
       width: 4rem;
     }
   }
+  .active {
+    position: relative;
+    ::before {
+      content: url("/images/dot.svg");
+      position: absolute;
+      bottom: -4%;
+      right: 50%;
+    }
+  }
 }
 
 #hero {
