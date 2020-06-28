@@ -64,7 +64,7 @@ header {
   // #right_hero {
   //   display: none !important;
   // }
-  @media only screen and (max-width: $md) {
+  @media only screen and (max-width: 767px) {
     text-align: center;
     .image_line {
       width: 16rem;
@@ -110,14 +110,17 @@ header {
 
 #story {
   .image {
-    width: 100%;
-
+    // width: 100%;
     img {
-      width: 20rem;
-      height: 20rem;
-      @media screen and (max-width: $md) {
-        width: 18rem !important;
-        height: 18rem !important;
+      width: 20rem !important;
+      height: 20rem !important;
+    }
+
+    // background: red !important;
+    @media screen and (max-width: $md) {
+      img {
+        width: 20rem;
+        height: 20rem;
       }
     }
   }
@@ -215,7 +218,7 @@ header {
 
 #footer {
   .thank_you {
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: $md) {
       flex-direction: column-reverse;
     }
   }

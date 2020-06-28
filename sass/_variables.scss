@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $sm: 569px;
-$md: 767px;
+$md: 768px;
 $primary: #fff175;
 $secondary: #fdf9d2;
 $dark: #16151c;
@@ -68,7 +68,7 @@ h2 {
 .text-large {
   font-size: 8.4375rem !important;
   font-weight: 900 !important;
-  @media screen and (max-width: $md) {
+  @media only screen and (max-width: 768px) {
     font-size: 6rem !important;
   }
   @media screen and (max-width: $sm) {
