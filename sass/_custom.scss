@@ -226,7 +226,17 @@ header {
 }
 
 #footer {
+  .about_me {
+    position: absolute;
+    // bottom: 10%;
+    right: 20%;
+  }
   .thank_you {
+    font-weight: 700;
+    // .text-large {
+    //   color: blue !important;
+    //   font-size: 7rem;
+    // }
     @media screen and (max-width: $md) {
       flex-direction: column-reverse;
     }

@@ -18,7 +18,7 @@
    -->
   <body class="d-flex flex-column">
     <!-- Header start -->
-    <header class="bg-dark">
+    <header class="bg-dark position-fixed w-100" style="z-index: 1;">
       <nav class="navbar container navbar-expand-lg">
         <a class="navbar-brand flex-grow-1" href="#hero">
           <img src="/images/logo.svg" alt="" />
@@ -393,20 +393,18 @@
             <p>hello@mike.com</p>
           </div>
         </div>
-        <div
-          class="d-flex flex-column align-items-start w-100"
-          style="
-            text-orientation: sideways;
-            writing-mode: vertical-rl;
-            height: 6rem;
-          "
-        >
-          <a href="#about">
-            <i class="fas fa-arrow-left text-primary"></i>
-            <small class="text-primary m-0 p-0 ml-auto">
-              About me
-            </small>
-          </a>
+        <div class="about_me">
+          <div
+            class="d-flex flex-column m-0 align-items-start w-100"
+            style="text-orientation: sideways; writing-mode: vertical-rl;"
+          >
+            <a href="#about">
+              <i class="fas fa-arrow-left text-primary"></i>
+              <small class="text-primary m-0 p-0 ml-auto">
+                About me
+              </small>
+            </a>
+          </div>
         </div>
         <div
           class="d-flex justify-content-between align-items-baseline thank_you"
@@ -422,6 +420,12 @@
     </footer>
 
     <!-- Scripts -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
       integrity="sha256-u+Q/eQIe6P5wU4K8maihJOQkhqBbf7K1NN68GwTpNz0="
