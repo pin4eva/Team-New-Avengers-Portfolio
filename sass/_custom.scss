@@ -30,23 +30,9 @@ header {
       width: 4rem;
     }
   }
-  .navbar-collapse {
-    flex: 0;
-  }
-  .navbar-nav {
-    .active {
-      &:before {
-        content: "";
-        position: absolute;
-        top: -15px;
-        background: $secondary !important;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        left: calc(50% - 8px);
-      }
-    }
-  }
+  // .navbar-collapse {
+  //   flex: 0;
+  // }
 }
 
 #hero {
@@ -68,7 +54,7 @@ header {
     img {
       position: absolute;
       top: -5%;
-      left: 25%;
+      left: -6%;
       width: 18rem;
       height: 24rem;
     }
@@ -79,21 +65,47 @@ header {
       color: rgba(255, 255, 255, 0.02) !important;
     }
   }
-  @media screen and (max-width: $md) {
+  @media only screen and (max-width: $md) {
     text-align: center;
+    .image_line {
+      width: 16rem;
+      height: 22rem;
+      max-width: 90%;
+      max-width: 90%;
+      // max-height: 95%;
+      border: 3px solid $primary;
+      position: relative;
+    }
+    #right_hero {
+      display: none !important;
+    }
+    .image {
+      img {
+        position: absolute;
+        top: -5%;
+        left: -6%;
+        width: 16rem;
+        height: 22rem;
+      }
+    }
     .text-content {
       margin: 2rem 0 !important;
     }
   }
 }
+// #right_hero {
+//   @media screen and (max-width: $sm) {
+//     display: none !important;
+//     text-align: center;
+//     .text-content {
+//       margin: 2rem 0 !important;
+//     }
+//   }
+// }
 
-#right_hero {
-  @media screen and (max-width: $sm) {
+@media screen and (max-width: $sm) {
+  #right_hero {
     display: none !important;
-    text-align: center;
-    .text-content {
-      margin: 2rem 0 !important;
-    }
   }
 }
 
