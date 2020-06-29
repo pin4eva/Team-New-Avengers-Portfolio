@@ -2,15 +2,17 @@
 
 $sm: 569px;
 $md: 768px;
+
+// Bootstrap overrides
 $primary: #fff175;
 $secondary: #fdf9d2;
 $dark: #16151c;
 $gray: #c5c5c6;
 $info: #c5c5c6;
-$text-2: #212529; // $success:       $green !default;
-// $warning:       $yellow !default;
-// $danger:        $red !default;
-// $light:         $gray-100 !default;
+$text-2: #212529;
+
+// Global resets
+
 html {
   width: 100% !important;
   height: 100%;
@@ -29,6 +31,12 @@ body {
   @media screen and (max-width: $md) {
     font-size: 14px !important;
   }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 h1 {

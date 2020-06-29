@@ -1,27 +1,20 @@
-/* Variables */
 @import "./variables";
-$background: $primary;
 
+// Local variables
+$background: $primary;
 $color-primary: $primary;
 $color-light: white;
 $color-dim: $primary;
 $spacing: 0;
 $radius: 4px;
-
 $date: 120px;
 $dotborder: 4px;
 $dot: 18px;
 $line: 4px;
-
 $font-title: "Saira", sans-serif;
 $font-text: "Saira", sans-serif;
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
+// header
 header {
   .navbar-brand {
     img {
@@ -39,6 +32,7 @@ header {
   }
 }
 
+// header
 #hero {
   p {
     font-family: Saira;
@@ -70,9 +64,6 @@ header {
     }
   }
 
-  // #right_hero {
-  //   display: none !important;
-  // }
   @media only screen and (max-width: 767px) {
     text-align: center;
     .image_line {
@@ -101,22 +92,15 @@ header {
     }
   }
 }
-// #right_hero {
-//   @media screen and (max-width: $sm) {
-//     display: none !important;
-//     text-align: center;
-//     .text-content {
-//       margin: 2rem 0 !important;
-//     }
-//   }
-// }
 
+// right hero section
 @media screen and (max-width: $sm) {
   #right_hero {
     display: none !important;
   }
 }
 
+// Story section
 #story {
   .image {
     // width: 100%;
@@ -199,6 +183,7 @@ header {
   }
 }
 
+// Works section
 #works {
   img {
     width: 20rem;
@@ -212,6 +197,7 @@ header {
   }
 }
 
+// Hire sectiom
 #hire {
   form {
     .form-control {
@@ -224,6 +210,21 @@ header {
     }
   }
 }
+
+// Button pointer
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+.about_pointer {
+  animation: bounce 1s infinite alternate;
+}
+
+// footer
 
 #footer {
   .about_me {
