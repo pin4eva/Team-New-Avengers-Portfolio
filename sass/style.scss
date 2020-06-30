@@ -21,30 +21,30 @@ header {
       width: 4rem;
     }
   }
-  // .active {
-  //   position: relative;
-  //   ::before {
-  //     content: url("/images/dot.svg");
-  //     position: absolute;
-  //     bottom: -4%;
-  //     right: 50%;
-  //   }
-  // }
+  .nav-item {
+    // position: relative;
+    .active {
+      position: relative;
+      ::after {
+        content: url("/images/dot.svg");
+        position: absolute;
+        bottom: -4%;
+        right: 50%;
+      }
+    }
+  }
 }
 
 // header
 #hero {
-  height: 85vh;
-  display: grid;
-  place-items: center;
-
   p {
     font-family: Saira;
     font-size: 1.35rem;
     font-weight: normal !important;
   }
   .container {
-    overflow: hidden;
+    margin: 5rem auto;
+
     .image_line {
       width: 18rem;
       height: 24rem;
@@ -75,34 +75,6 @@ header {
       color: rgba(255, 255, 255, 0.02) !important;
     }
   }
-
-  // @media only screen and (max-width: 767px) {
-  //   text-align: center;
-  //   .image_line {
-  //     width: 16rem;
-  //     height: 22rem;
-  //     max-width: 90%;
-  //     max-width: 90%;
-  //     // max-height: 95%;
-  //     border: 3px solid $primary;
-  //     position: relative;
-  //   }
-  //   #right_hero {
-  //     display: none !important;
-  //   }
-  //   .image {
-  //     img {
-  //       position: absolute;
-  //       top: -5%;
-  //       left: -6%;
-  //       width: 16rem;
-  //       height: 22rem;
-  //     }
-  //   }
-  //   .text-content {
-  //     margin: 2rem 0 !important;
-  //   }
-  // }
 }
 
 // right hero section
@@ -116,10 +88,10 @@ header {
 #story {
   .image {
     width: 100%;
-    max-width: 90%;
+    max-width: 85%;
     margin: 0 auto;
     img {
-      width: inherit;
+      width: inherit !important;
     }
   }
   /* Timeline */
@@ -196,7 +168,7 @@ header {
 // Works section
 #works {
   img {
-    width: 20rem;
+    width: 100%;
     height: 360px;
     max-width: 20rem;
     max-height: 20rem;
@@ -232,6 +204,13 @@ header {
 }
 .about_pointer {
   animation: bounce 1s infinite alternate;
+  &:hover {
+    text-decoration: none;
+    i,
+    small {
+      color: white !important;
+    }
+  }
 }
 
 // footer
