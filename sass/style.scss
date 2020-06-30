@@ -103,18 +103,11 @@ header {
 // Story section
 #story {
   .image {
-    // width: 100%;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
     img {
-      width: 20rem !important;
-      height: 20rem !important;
-    }
-
-    // background: red !important;
-    @media screen and (max-width: $md) {
-      img {
-        width: 20rem;
-        height: 20rem;
-      }
+      width: inherit;
     }
   }
   /* Timeline */
@@ -180,6 +173,11 @@ header {
         top: 5px;
       }
     }
+  }
+  .right_story {
+    display: grid;
+    place-items: center;
+    border-radius: 3%;
   }
 }
 
