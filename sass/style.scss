@@ -21,40 +21,52 @@ header {
       width: 4rem;
     }
   }
-  .active {
-    position: relative;
-    ::before {
-      content: url("/images/dot.svg");
-      position: absolute;
-      bottom: -4%;
-      right: 50%;
-    }
-  }
+  // .active {
+  //   position: relative;
+  //   ::before {
+  //     content: url("/images/dot.svg");
+  //     position: absolute;
+  //     bottom: -4%;
+  //     right: 50%;
+  //   }
+  // }
 }
 
 // header
 #hero {
+  height: 85vh;
+  display: grid;
+  place-items: center;
+
   p {
     font-family: Saira;
     font-size: 1.35rem;
     font-weight: normal !important;
   }
-  .image_line {
-    width: 18rem;
-    height: 24rem;
-    max-width: 90%;
-    max-width: 90%;
-    // max-height: 95%;
-    border: 3px solid $primary;
-    position: relative;
-  }
-  .image {
-    img {
-      position: absolute;
-      top: -5%;
-      left: -6%;
+  .container {
+    overflow: hidden;
+    .image_line {
       width: 18rem;
       height: 24rem;
+      border: 3px solid $primary;
+      position: relative;
+      .image {
+        width: 100%;
+        img {
+          width: inherit;
+          position: absolute;
+          top: -5%;
+          left: -6%;
+          width: 18rem;
+          height: 24rem;
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+      #right_hero {
+        display: none !important;
+      }
     }
   }
 
@@ -64,33 +76,33 @@ header {
     }
   }
 
-  @media only screen and (max-width: 767px) {
-    text-align: center;
-    .image_line {
-      width: 16rem;
-      height: 22rem;
-      max-width: 90%;
-      max-width: 90%;
-      // max-height: 95%;
-      border: 3px solid $primary;
-      position: relative;
-    }
-    #right_hero {
-      display: none !important;
-    }
-    .image {
-      img {
-        position: absolute;
-        top: -5%;
-        left: -6%;
-        width: 16rem;
-        height: 22rem;
-      }
-    }
-    .text-content {
-      margin: 2rem 0 !important;
-    }
-  }
+  // @media only screen and (max-width: 767px) {
+  //   text-align: center;
+  //   .image_line {
+  //     width: 16rem;
+  //     height: 22rem;
+  //     max-width: 90%;
+  //     max-width: 90%;
+  //     // max-height: 95%;
+  //     border: 3px solid $primary;
+  //     position: relative;
+  //   }
+  //   #right_hero {
+  //     display: none !important;
+  //   }
+  //   .image {
+  //     img {
+  //       position: absolute;
+  //       top: -5%;
+  //       left: -6%;
+  //       width: 16rem;
+  //       height: 22rem;
+  //     }
+  //   }
+  //   .text-content {
+  //     margin: 2rem 0 !important;
+  //   }
+  // }
 }
 
 // right hero section

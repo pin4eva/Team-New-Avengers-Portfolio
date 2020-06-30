@@ -57,13 +57,6 @@ h2 {
   padding: 0.8rem 1.3rem !important;
 }
 
-// .btn-outline-dark {
-//   &:hover {
-//     background-color: $primary;
-//     border: $primary;
-//   }
-// }
-
 .btn-primary {
   font-weight: bolder !important;
   &:hover {
@@ -80,7 +73,7 @@ h2 {
     font-size: 6rem !important;
   }
   @media screen and (max-width: $sm) {
-    font-size: 4rem !important;
+    font-size: 3.8rem !important;
   }
 }
 .text-18 {
