@@ -24,13 +24,17 @@ header {
   }
   .nav-item {
     .active {
-      position: relative;
-      ::after {
-        content: url("/images/dot.svg");
-        position: absolute;
-        bottom: -4%;
-        right: 50%;
-      }
+      border-bottom: 2px solid $theme-primary;
+
+      // position: relative;
+      // ::after {
+      //   content: url("/images/dot.svg");
+      //   content: "";
+      //   position: absolute;
+      //   bottom: -4%;
+      //   right: 50%;
+
+      // }
     }
   }
 }
@@ -50,8 +54,10 @@ header {
 
     .wrapper {
       height: 80%;
+      // max-height: 50%;
       display: grid;
       place-items: center;
+
       .image_line {
         width: 18rem;
         height: 24rem;
@@ -85,11 +91,11 @@ header {
     writing-mode: vertical-rl;
   }
   .welcome {
-    h1 {
+    .text-large {
       color: rgba(255, 255, 255, 0.02) !important;
-      font-size: 4em !important;
-      @media screen and (min-width: $md) {
-        font-size: 8em !important;
+      font-size: 10rem !important;
+      @media screen and (max-width: $sm) {
+        font-size: 5em !important;
       }
     }
   }
