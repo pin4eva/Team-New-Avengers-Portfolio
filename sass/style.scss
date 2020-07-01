@@ -1,10 +1,10 @@
 @import "./variables";
 
 // Local variables
-$background: $primary;
-$color-primary: $primary;
+$background: $theme-primary;
+$color-theme-primary: $theme-primary;
 $color-light: white;
-$color-dim: $primary;
+$color-dim: $theme-primary;
 $spacing: 0;
 $radius: 4px;
 $date: 120px;
@@ -16,6 +16,7 @@ $font-text: "Saira", sans-serif;
 
 // header
 header {
+  z-index: 1;
   .navbar-brand {
     img {
       width: 4rem;
@@ -37,18 +38,19 @@ header {
 
 // header
 #hero {
+  height: 100vmax;
   p {
     font-family: Saira;
     font-size: 1.35rem;
     font-weight: normal !important;
   }
   .container {
-    margin: 5rem auto;
+    margin-top: 5rem;
 
     .image_line {
       width: 18rem;
       height: 24rem;
-      border: 3px solid $primary;
+      border: 3px solid $theme-primary;
       position: relative;
       .image {
         width: 100%;
@@ -69,7 +71,10 @@ header {
       }
     }
   }
-
+  .about_pointer {
+    text-orientation: sideways;
+    writing-mode: vertical-rl;
+  }
   .welcome {
     h1 {
       color: rgba(255, 255, 255, 0.02) !important;
@@ -96,7 +101,7 @@ header {
   }
   /* Timeline */
   .timeline {
-    border-left: 5px solid $primary;
+    border-left: 5px solid $theme-primary;
     border-bottom-right-radius: $radius;
     border-top-right-radius: $radius;
     // background: fade($color-light, 3%);
@@ -147,7 +152,7 @@ header {
       }
 
       &:after {
-        box-shadow: 0 0 0 $dotborder fade($color-primary, 100%);
+        box-shadow: 0 0 0 $dotborder fade($color-theme-primary, 100%);
         left: ($spacing + $line + ($dot * 0.35)) * -1;
         background: lighten($background, 5%);
         border-radius: 50%;
@@ -177,17 +182,23 @@ header {
   h3 {
     margin-top: 1rem;
   }
+  .fa-arrow-right {
+    transform: rotate(-45deg);
+  }
+  a {
+    color: inherit;
+  }
 }
 
 // Hire sectiom
 #hire {
   form {
     .form-control {
-      background: $dark;
+      background: $theme-dark;
       padding: 1.5rem;
-      border: 2px solid $primary;
+      border: 2px solid $theme-primary;
       &::placeholder {
-        color: $primary;
+        color: $theme-primary;
       }
     }
   }
@@ -204,6 +215,8 @@ header {
 }
 .about_pointer {
   animation: bounce 1s infinite alternate;
+  text-orientation: sideways;
+  writing-mode: vertical-rl;
   &:hover {
     text-decoration: none;
     i,

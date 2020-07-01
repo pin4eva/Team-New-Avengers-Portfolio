@@ -1,17 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 $sm: 569px;
 $md: 768px;
 
 // Bootstrap overrides
-$primary: #fff175;
-$secondary: #fdf9d2;
-$dark: #16151c;
-$gray: #c5c5c6;
-$info: #c5c5c6;
+$theme-primary: #fff175;
+$theme-secondary: #fdf9d2;
+$theme-dark: #16151c;
+$theme-gray: #c5c5c6;
+$theme-info: #c5c5c6;
 $text-2: #212529;
+$transition: all 0.3s ease-in;
 
 // Global resets
+.btn-theme-primary {
+  background-color: $theme-primary !important;
+  color: $theme-dark !important;
+  &:hover {
+    background: transparent;
+    color: $theme-primary;
+  }
+}
+
+.btn-outline-theme-dark {
+  background-color: transparent;
+  color: $theme-dark;
+  &:hover {
+    background: transparent;
+    color: $theme-dark;
+  }
+}
+
+.bg-theme-dark {
+  background-color: $theme-dark !important;
+}
+
+.bg-theme-primary {
+  background: $theme-primary;
+}
+.text-theme-primary {
+  color: $theme-primary;
+}
+
+.text-theme-info {
+  color: $theme-info;
+}
+
+.text-theme-info {
+  color: $theme-info;
+}
+
+.text-theme-secondary {
+  color: $theme-secondary;
+}
+
+.btn-outline-primary {
+  border: 2px solid $theme-primary;
+  color: $theme-primary;
+  transition: $transition;
+  &:hover {
+    background: $theme-primary;
+    color: $theme-dark;
+    border-color: $theme-primary;
+  }
+}
 
 html {
   width: 100% !important;
@@ -19,7 +70,7 @@ html {
 }
 body {
   font-family: "Popins", sans-serif !important;
-  color: $dark;
+  color: $theme-dark;
   width: inherit !important;
   height: inherit !important;
   max-width: 100% !important;
@@ -57,13 +108,17 @@ h2 {
   padding: 0.8rem 1.3rem !important;
 }
 
-.btn-primary {
+.btn-theme-primary {
   font-weight: bolder !important;
   &:hover {
     background-color: transparent !important;
-    border-color: $primary !important;
-    color: $primary !important;
+    border-color: $theme-primary !important;
+    color: $theme-primary !important;
   }
+}
+
+.text-theme-light {
+  color: whitesmoke !important;
 }
 
 .text-large {
@@ -79,15 +134,37 @@ h2 {
 .text-18 {
   font-size: 18px !important;
 }
-
-hr {
-  border: 3px solid $primary !important;
+.text-inherit {
+  color: inherit;
 }
 
+.text-fade {
+  color: rgba(255, 255, 255, 0.02) !important;
+}
+
+hr {
+  border: 3px solid $theme-primary !important;
+}
+
+.btn-outline-dark {
+  &:hover {
+    background-color: $theme-dark;
+  }
+}
+.w-90 {
+  width: 90%;
+}
 #about {
   img {
     width: 523px;
     height: 479x;
     max-width: 95%;
+  }
+}
+
+a {
+  color: $theme-primary;
+  &:hover {
+    color: $theme-secondary;
   }
 }
