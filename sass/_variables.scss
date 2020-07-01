@@ -91,21 +91,21 @@ ul {
 }
 
 h1 {
-  font-size: 5rem !important;
+  font-size: 5em !important;
   font-weight: bolder !important;
 }
 h2 {
-  font-size: 3.4rem !important;
+  font-size: 3.4em !important;
   font-weight: bolder !important;
 }
 
 h2 {
-  font-size: 2.5rem !important;
+  font-size: 2.5em !important;
   font-weight: bolder !important;
 }
 
 .btn {
-  padding: 0.8rem 1.3rem !important;
+  padding: 0.8rem 1.3em !important;
 }
 
 .btn-theme-primary {
@@ -122,13 +122,13 @@ h2 {
 }
 
 .text-large {
-  font-size: 8.4375rem;
+  font-size: 8.4375em;
   font-weight: 900;
   @media only screen and (max-width: 768px) {
-    font-size: 6rem !important;
+    font-size: 6em !important;
   }
   @media screen and (max-width: $sm) {
-    font-size: 3.8rem !important;
+    font-size: 3.8em !important;
   }
 }
 .text-18 {
